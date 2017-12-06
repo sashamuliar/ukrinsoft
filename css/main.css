@@ -17,6 +17,9 @@ a{
   text-decoration: none;
   color: #fff;
 }
+a:hover{
+  text-decoration: none;
+}
 ul{
   padding: 0;
   margin: 0;
@@ -92,7 +95,7 @@ header{
   -o-transition: 0.2s;
   transition: 0.2s;
   }
-.header-wrapper.fixed .search, .header-wrapper.fixed .close{
+.header-wrapper.fixed .search, .header-wrapper.fixed .search-close{
   top:32px;
   -webkit-transition: top 0.2s;
   -moz-transition: top 0.2s;
@@ -145,14 +148,18 @@ nav li a:hover{
   left: 0;
   top:78px;
 }
-.close{
+.search-close{
   display: none;
 }
-.search, .close{
+.search, .search-close{
   position: absolute;
   right: 52px;
   top: 85px;
   cursor: pointer;
+}
+.search-close{
+  right: 0px;
+  top: 15px;
 }
 @media(min-width:576px) {
   nav{
@@ -219,7 +226,7 @@ nav li a:hover{
 .humb-menu{
   position: absolute;
   right: 0;
-  top: 88px;
+  top: 85px;
   cursor: pointer;
 }
 /* header section - end*/
@@ -308,6 +315,7 @@ h3{
   -o-transition: 0.2s;
   transition: 0.2s;
   background-color: #d46b6c;
+  color: #fff;
 }
 .play-button{
   position: absolute;

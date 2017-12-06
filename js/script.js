@@ -16,13 +16,13 @@ $(".search").click(function(){
   $(".nav1").delay(250).fadeOut(250);
   $(".search").delay(350).fadeOut(250);
   $(".search-field").delay(350).fadeIn(350);
-  $(".close").delay(600).fadeIn(250);
+  $(".search-close").delay(600).fadeIn(250);
   setTimeout(function() {
     $("#search-input").focus();
   }, 900);
 });
-$(".close").click(function(){
-  $(".close").fadeOut(250);
+$(".search-close").click(function(){
+  $(".search-close").fadeOut(250);
   $(".search-field").delay(200).fadeOut(250);
   $(".nav1").delay(350).fadeIn(250);
   $(".nav2").delay(450).fadeIn(250);
@@ -60,4 +60,4 @@ var arrrayYoutube = [
   "https://www.youtube.com/embed/O2etBQYLcpg",
   "https://www.youtube.com/embed/RoJ4R5dfZkw",
   "https://www.youtube.com/embed/5CG9RC-OLMo"
-]
+];

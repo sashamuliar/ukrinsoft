@@ -7,12 +7,9 @@
   <title>WEB Design</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400" rel="stylesheet">
-  <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/main.css">
-  <script type="text/javascript" src="js/EventHelpers.js"></script>
-  <script type="text/javascript" src="js/cssQuery-p.js"></script>
-  <script type="text/javascript" src="js/jcoglan.com/sylvester.js"></script>
-  <script type="text/javascript" src="js/cssSandpaper.js"></script>
 </head>
 <body>
   <div class="main-wrap">
@@ -29,11 +26,11 @@
         </nav>
         <div class="search-field">
           <input type="text" placeholder="Type to search..." id="search-input">
+          <div class="search-close"><img src="gfx/cancel.png" alt=""></div>
         </div>
         <div class="search">
           <img src="gfx/search.png" alt="">
         </div>
-        <div class="close"><img src="gfx/cancel.png" alt=""></div>
         <div class="humb-menu">
           <img src="gfx/humb.png" alt="">
         </div>
@@ -76,36 +73,28 @@
 
   <section class="content">
     <div class="row no-gutters">
-      <div class="col-sm-6 col-md-3">
-        <div class="content-sample sample1">
+      <div class="col-sm-6 col-md-3 content-sample sample1">
           <div class="bg-overlay">
             <p class="sample-title">AMET CONDIMENTUM</p>
             <p class="sample-key-word">Dolor</p>
           </div>
+      </div>
+      <div class="col-sm-6 col-md-3 content-sample sample2">
+        <div class="bg-overlay">
+          <p class="sample-title">LOREM CURSUS</p>
+          <p class="sample-key-word">Ligula</p>
         </div>
       </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="content-sample sample2">
-          <div class="bg-overlay">
-            <p class="sample-title">LOREM CURSUS</p>
-            <p class="sample-key-word">Ligula</p>
-          </div>
+      <div class="col-sm-6 col-md-3 content-sample sample3">
+        <div class="bg-overlay">
+          <p class="sample-title">CONDIMENTUM ULTRICIES</p>
+          <p class="sample-key-word">Consectetur</p>
         </div>
       </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="content-sample sample3">
-          <div class="bg-overlay">
-            <p class="sample-title">CONDIMENTUM ULTRICIES</p>
-            <p class="sample-key-word">Consectetur</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="content-sample sample4">
-          <div class="bg-overlay">
-            <p class="sample-title">RIDICULUS ORNARE</p>
-            <p class="sample-key-word">Ullamcorper</p>
-          </div>
+      <div class="col-sm-6 col-md-3 content-sample sample4">
+        <div class="bg-overlay">
+          <p class="sample-title">RIDICULUS ORNARE</p>
+          <p class="sample-key-word">Ullamcorper</p>
         </div>
       </div>
     </div>
@@ -174,7 +163,7 @@
       <iframe id="content-window" width="560" height="315" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
-  
+
   <script
     src="https://code.jquery.com/jquery-3.2.1.js"
     integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
